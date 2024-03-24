@@ -1,3 +1,5 @@
+import math
+
 # task1
 numlist = [x ** 2 for x in range(11)]
 print(numlist)
@@ -20,3 +22,9 @@ class SquareGenerator:
 
 a = SquareGenerator()
 print(a.squares(3, 10))
+
+
+# task4
+
+rootlist = [math.sqrt(x) for x in a.squares(1, 10)]
+print(rootlist)

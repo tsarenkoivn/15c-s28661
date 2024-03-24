@@ -17,6 +17,9 @@ print(e_squares(2, 10))
 
 class SquareGenerator:
     def squares(self, start, end):
+        if end < start:
+            raise ValueError("End of the range cannot be less than the start.")
+
         return [x ** 2 for x in range(start, end + 1)]
 
 
@@ -28,3 +31,8 @@ print(a.squares(3, 10))
 
 rootlist = [math.sqrt(x) for x in a.squares(1, 10)]
 print(rootlist)
+
+
+# task5
+a.squares(10, 1)
+

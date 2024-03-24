@@ -1,5 +1,5 @@
 import math
-from square_generator import SquareGenerator
+from square_generator.square_generator import SquareGenerator
 
 # task1
 numlist = [x ** 2 for x in range(11)]

@@ -29,4 +29,14 @@ print(rootlist)
 a.squares(10, 1)
 
 
+# task 8
+class CubicGenerator(SquareGenerator):
+    # override
+    def squares(self, start, end):
+        if end < start:
+            raise ValueError("End of the range cannot be less than the start.")
 
+        return [x ** 3 for x in range(start, end + 1)]
+
+c = CubicGenerator()
+print(c.squares(1, 10))
